@@ -1,0 +1,54 @@
+div.code-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    width: 100dvw;
+    height: 100dvh;
+
+    background: rgba(1, 1, 1, 0.25);
+    animation: form-appear 750ms ease-out forwards;
+}
+
+div.code-popup > div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 1.25rem 3rem;
+    padding-right: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1.5rem;
+
+    background-color: var(--background) !important;
+    border-radius: 10px;
+}
+
+div.code-popup > div > img {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    cursor: pointer;
+}
+
+div.code-popup > div > div {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+div.code-popup > div > button {
+    align-self: flex-start;
+}
+
+div.code-popup > div pre {
+    width: fit-content;
+
+    background-color: var(--background) !important;
+}

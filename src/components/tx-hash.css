@@ -1,0 +1,12 @@
+div.tx-hash {
+    width: max-content;
+
+    display: flex;
+    align-items: center;
+    column-gap: 0.25rem;
+}
+
+div.tx-hash > h6 {
+    text-wrap: nowrap;
+    color: var(--secondary);
+}
