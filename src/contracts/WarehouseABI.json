@@ -1,0 +1,298 @@
+[
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "shop",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "products",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+    },
+    {
+        "inputs": [],
+        "name": "NotARobot",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "NotAnOwner",
+        "type": "error"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "orderId",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "enum Warehouse.Activity",
+                "name": "activity",
+                "type": "uint8"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "verifier",
+                "type": "address"
+            }
+        ],
+        "name": "ActivityVerifier",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "orderId",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "enum Warehouse.Activity",
+                "name": "activity",
+                "type": "uint8"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "robotId",
+                "type": "uint256"
+            }
+        ],
+        "name": "AssingRobot",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "orderId",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "requestId",
+                "type": "uint256"
+            }
+        ],
+        "name": "RequestRobotId",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "orderId",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "enum Enums.OrderStatus",
+                "name": "status",
+                "type": "uint8"
+            }
+        ],
+        "name": "WarehouseActivity",
+        "type": "event"
+    },
+    {
+        "inputs": [],
+        "name": "activeRobots",
+        "outputs": [
+            {
+                "internalType": "uint256[]",
+                "name": "robots",
+                "type": "uint256[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "anyrand",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "orderId",
+                "type": "string"
+            },
+            {
+                "internalType": "address",
+                "name": "verifier",
+                "type": "address"
+            }
+        ],
+        "name": "deliverOrder",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "orderId",
+                "type": "string"
+            },
+            {
+                "internalType": "enum Warehouse.Activity",
+                "name": "activityType",
+                "type": "uint8"
+            },
+            {
+                "internalType": "uint256",
+                "name": "deadline",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "callbackGasLimit",
+                "type": "uint256"
+            }
+        ],
+        "name": "generateRobotId",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "payable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "orderId",
+                "type": "string"
+            },
+            {
+                "internalType": "address",
+                "name": "verifier",
+                "type": "address"
+            }
+        ],
+        "name": "packOrder",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "orderId",
+                "type": "string"
+            },
+            {
+                "internalType": "address",
+                "name": "verifier",
+                "type": "address"
+            }
+        ],
+        "name": "pickOrder",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "orderId",
+                "type": "string"
+            }
+        ],
+        "name": "processOrder",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "requestId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "randomWord",
+                "type": "uint256"
+            }
+        ],
+        "name": "receiveRandomness",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint8",
+                "name": "robotId",
+                "type": "uint8"
+            },
+            {
+                "internalType": "enum Warehouse.Activity",
+                "name": "robotType",
+                "type": "uint8"
+            }
+        ],
+        "name": "robotStatus",
+        "outputs": [
+            {
+                "internalType": "enum Enums.RobotStatus",
+                "name": "",
+                "type": "uint8"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "robot",
+                "type": "address"
+            }
+        ],
+        "name": "setRobot",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    }
+]
