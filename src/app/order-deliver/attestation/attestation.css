@@ -1,0 +1,228 @@
+main.attestation {
+    width: 80dvw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    margin-bottom: 2rem;
+}
+
+main.attestation > div.order-data {
+    margin-bottom: 1.5rem;
+
+    display: grid;
+    grid-template-columns: repeat(5, max-content);
+    align-items: center;
+    justify-items: center;
+}
+
+main.attestation > div.order-data > div.status h5 {
+    align-self: flex-start;
+
+    border-radius: 5px !important;
+}
+
+main.attestation > div.order-data > div {
+    width: 100%;
+    height: 100%;
+
+    padding: 1rem 1.25rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 0.5rem;
+
+    border: 1px solid var(--secondary);
+
+    background-color: var(--card-background);
+}
+
+main.attestation > div.order-data > div.order-id {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+main.attestation > div.order-data > div.order-id > h2 {
+    text-decoration: underline;
+}
+
+main.attestation > div.order-data > div:not(div:nth-child(1)) {
+    border-left-color: transparent;
+}
+
+main.attestation > div.order-data > div:last-of-type {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+main.attestation > div.order-data > div.receipt > a {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+
+    text-decoration: underline;
+    text-wrap: nowrap;
+
+    cursor: pointer;
+}
+
+main.attestation > div.order-data > div.topic > div {
+    display: flex;
+    align-items: center;
+}
+
+main.attestation > div.order-data > div.topic > div a {
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+main.attestation > div.order-data > div > h4 {
+    width: 100%;
+
+    text-align: left;
+    color: var(--secondary);
+}
+
+main.attestation > section.evidence {
+    display: flex;
+    column-gap: 5rem;
+}
+
+main.attestation > section.evidence button#black-button-disabled > img,
+main.attestation > section.evidence button.primary-button > img {
+    filter: none;
+}
+
+main.attestation > section.evidence > div {
+    position: relative;
+    width: 22rem;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.25rem;
+}
+
+main.attestation > section.evidence > div > h2 {
+    text-wrap: nowrap;
+}
+
+main.attestation > section.evidence > div > div.schema {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    column-gap: 0.25rem;
+
+    text-wrap: nowrap;
+}
+
+main.attestation > section.evidence > div > div.schema > h5:nth-child(2) {
+    text-decoration: underline;
+
+    cursor: pointer;
+}
+
+main.attestation > section.evidence > div > div.schema > img {
+    cursor: pointer;
+}
+
+main.attestation > section.evidence > div > .upload-image {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.75rem;
+}
+
+main.attestation > section.evidence > div > .upload-image > label.file-upload {
+    position: relative;
+    padding: 4rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 0.5rem;
+
+    text-wrap: nowrap;
+
+    border: 2px dashed #d3d3d3;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+main.attestation > section.evidence > div > .upload-image > label.file-upload > input[type='file'] {
+    display: none;
+}
+
+main.attestation > section.evidence > div > .upload-image > label.file-upload > h4 {
+    text-align: center;
+}
+
+main.attestation > section.evidence > div > .upload-image > div.cid {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+main.attestation > section.evidence > div > .upload-image > div.cid > a {
+    cursor: pointer;
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+main.attestation > section.evidence > div > .upload-image > div.cid > img {
+    cursor: pointer;
+}
+
+main.attestation > section.evidence > div > .upload-image > h4 {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+main.attestation > section.evidence > div .confetti-container {
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.attestation > section.evidence > div .confetti-btn {
+    width: 1rem;
+    height: 1rem;
+}
+
+main.attestation > section.evidence > div > div.success {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 1.75rem auto;
+    column-gap: 0.5rem;
+}
+
+main.attestation > section.evidence > div > div.success > h4 {
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+main.attestation > section.evidence > div > div.success > a {
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+main.attestation > section.evidence > div > div.success > img {
+    height: 1.75rem;
+    width: auto;
+
+    grid-row: 1/3;
+}
+
+main.attestation > section.evidence > div > div.info {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
