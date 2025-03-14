@@ -73,3 +73,33 @@ Hence, our team decided to launch Scroll for Robotics as the first B2B Middlewar
 ### Introduce the concept of Hub - Architecture Overview
 
 ![image](https://github.com/user-attachments/assets/46398ba6-e43b-48fa-bb01-18dc209aa596)
+
+### Why custom, not a “one-size-fits-all” solution❓
+
+Our role is crucial because industrial robotic architectures are often complex and highly customized. Each industry has unique operational needs, diverse technologies, and specific regulatory requirements, making a one-size-fits-all approach impractical. That's why we offer tailored solutions, enabling industries to integrate Scroll Web3 infrastructure efficiently, which aligns perfectly with our product-market fit. This approach not only saves significant time for indsutries but also reduces costs.
+
+![image](https://github.com/user-attachments/assets/c3346aa3-ed69-4a16-8614-0dedd6b3af60)
+
+As a B2B (business-to-business) service provider, we are proud to be the first to offer this service on Scroll. In one of our future milestone (have a look in our pitch deck), Scroll for Robotics will also serve as a key driver in introducing a comprehensive ecosystem of industry-specific robotic development tools to the Scroll community as part of our ongoing service journey.
+
+## How we helps our industry clients? (Not Limited To)
+
+- **🏭 Manufacturing:** Tokenized digital twin robots managing tokenized inventory assets on Scroll. Leaving a transparent production line trail to trace back.
+
+- **🚚 3PL (Third Party Logistics) and Ecommerce:** Tokenized digital twin order fulfilment robots managing tokenized stocks and products on Scroll. Having real-time on-chain updates of your parcel.
+
+- **🧬 Pharmaceutical and Biotech:** Tokenized digital twin robots managing tokenized pharmaceutical products on Scroll. Making drug transparency regulations (e.g FDA) easier to follow.
+
+- **🍄 Agriculture and Farming:** Tokenized digital twin agriculture robots managing tokenized crops and products on Scroll. Greatly enhanced food traceability and source transparency.
+
+## Proof of Concept: An Implementation Prototype
+
+The implementation prototype we showcase in the demo video is built using the hub architecture concept that we proposed, which able to operate a robotic-powered small scale ecommerce-warehouse supply chain cycle. Further proving the feasibility of utilising Scroll solutions to solve real world industry problem in our project. Below attached is a high-level architecture diagram of our ecommerce-warehouse demo setup, which our custom hub being the most crucial middleware component:
+
+![image](https://github.com/user-attachments/assets/91b59c50-bc90-4a60-9cf2-a940549fef7f)
+
+The order placement occurs at the client layer, the purchased inventory are represented as tokenized RWA in the warehouse. Once an order is placed, the on-chain components (order contract and warehouse contract) orchestrate and coordinate the fulfillment process, leveraging tokenized robot assigned to various tasks. These robots are digital twins of real-world machines operating in a factory, simulated to mirror physical processes. 
+
+For our demo, we designed a warehouse operation that includes picking, packing, and delivering. We built a simulation using Webot and embedded it in our demo for seamless interaction with Scroll. When each robot completes a task in the simulation, it logs the action on Scroll, and the warehouse will trigger the next operation. For example, when a client orders a green cube, the picking order is assigned to a picking robot on Scroll, and the picking robot in the simulation will perform the task. After each robot completes its assigned task, it logs the action on Scroll, and the warehouse contract triggers the next packing operation.
+
+One of the key innovation in our demo system is the use of AnyRand, an on-chain randomness mechanism that dynamically selects an available robot from the fleet for each operation, optimizing workload distribution in a process known as load balancing. This architecture demonstrates how a hub can seamlessly integrate Scroll native Web3 services with industrial operations involving tokenized RWA, enabling functionalities such as on-chain recipient verification, attestations for last-mile distribution, and tamper-proof on-chain storage of industry data. Furthermore, in a Human-Robot Collaborative Environment, where human oversight is crucial, a multi-signature mechanism on Scroll able to ensure secure and efficient supervision, creating a real-time feedback loop that directly influences the behavior of the tokenized robots.
