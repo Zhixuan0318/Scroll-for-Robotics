@@ -106,7 +106,7 @@ One of the key innovation in our demo system is the use of AnyRand, an on-chain 
 
 ## 🔌Connecting local robotic fleet
 
-![image](https://github.com/user-attachments/assets/b6b669c3-5c22-4f76-8cc7-031d863bd467)
+![image](https://github.com/user-attachments/assets/8d378ed3-f46e-4c01-8b87-ac4dfeec679a)
 
 To further validate the feasibility of our implementation, we also perform testing on a physical robot, which we refer to as a local robotic fleet. The system is centered around the Hub as well, enabling industries to interact with an IoT connectivity layer (refer to above architecture overview). This layer acts as an intermediary between the robotic fleet and the Hub, which is integrated with Scroll. The IoT connectivity layer can incorporate various technologies such as AWS IoT Core, Microsoft Azure IoT, Oracle IoT cloud, and MQTT-based solutions like RabbitMQ or Kafka, etc. 
 
