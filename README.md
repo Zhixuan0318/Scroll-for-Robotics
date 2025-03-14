@@ -6,16 +6,16 @@
 
 <br>
 
-![Frame 5 (7)](https://github.com/user-attachments/assets/6009f617-ec06-43b4-a9e6-19fea83236db)
+![Frame 5 (8)](https://github.com/user-attachments/assets/8a8180ea-eb0b-44a4-9600-db60c47bd0e1)
 
 ## 📦 Our Deliverables
 
 1. Our 5 mins Demo Video (Youtube) [🌐Watch It!]()
 2. Our Pitch Deck (Google Drive) [🌐Read It!]()
-3. Our Demo DApp (Deployed on Scroll Sepolia) [🌐Try It!]()
+3. Our Demo DApp (Deployed on Scroll Sepolia) [🌐Try It!](https://scroll-for-robotics.vercel.app)
 
 ### Extra: Code Submission Breakdown 📃
-For the convenience of the technical judges, our team has organized the code submission by breaking down the structure and providing descriptions for each folder and important files. You can access the documentation folder [🌐here]() !
+For the convenience of the technical judges, our team has organized the code submission by breaking down the structure and providing descriptions for each folder and important files. You can access the documentation folder [🌐here](https://github.com/Zhixuan0318/Scroll-for-Robotics/tree/main/doc) !
 
 <br>
 
