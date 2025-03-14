@@ -10,8 +10,8 @@
 
 ## 📦 Our Deliverables
 
-1. Our 5 mins Demo Video (Youtube) [🌐Watch It!]()
-2. Our Pitch Deck (Google Drive) [🌐Read It!]()
+1. Our 5 mins Demo Video (Youtube) [🌐Watch It!](https://youtu.be/WIgbe8Z-8I8)
+2. Our Pitch Deck (Google Drive) [🌐Read It!](https://drive.google.com/file/d/1HU7H60-UosbpQc4bP7a_CDDBo11CIbX4/view?usp=sharing)
 3. Our Demo DApp (Deployed on Scroll Sepolia) [🌐Try It!](https://scroll-for-robotics.vercel.app)
 
 ### Extra: Code Submission Breakdown 📃
